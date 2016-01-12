@@ -1,6 +1,6 @@
 <html lang="pt-br">
     <head>
-        <title>Projeto1</title>
+        <title>Home</title>
 
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css"/>
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
@@ -13,7 +13,7 @@
 
         <div>
             <h1 class="text-center home" style="font-size: 65px;">
-                Utroque maiestatis ius no<br/>Lorem ipsum dolor sit
+                Home
             </h1>
         </div>
     </body>
