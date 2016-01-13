@@ -14,14 +14,9 @@
     <form method="get" action="action.php" class="form-horizontal">
         <fieldset>
 
-            <!-- Form Name -->
-            <legend>
-                Contato
-            </legend>
-
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">Nome</label>
+                <label id="label" class="col-md-4 control-label" for="textinput">Nome</label>
                 <div class="col-md-4">
                     <input id="textinput" name="nome" type="text"  class="form-control input-md">
 
@@ -30,7 +25,7 @@
 
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">E-mail</label>
+                <label id="label" class="col-md-4 control-label" for="textinput">E-mail</label>
                 <div class="col-md-4">
                     <input id="textinput" name="email" type="text"  class="form-control input-md">
 
@@ -39,7 +34,7 @@
 
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">Assunto</label>
+                <label id="label" class="col-md-4 control-label" for="textinput">Assunto</label>
                 <div class="col-md-4">
                     <input id="textinput" name="assunto" type="text" class="form-control input-md">
 
@@ -48,7 +43,7 @@
 
             <!-- Textarea -->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="textarea">Mensagem</label>
+                <label id="label" class="col-md-4 control-label" for="textarea">Mensagem</label>
                 <div class="col-md-4">
                     <textarea class="form-control" id="textarea" name="mensagem"></textarea>
                 </div>
@@ -67,15 +62,7 @@
         </fieldset>
     </form>
 
-        <footer>
-            <div style="background-color: black">
-                <div class="container">
-                    <div class="row">
-                        <p class="text-center" style="color: white">Todos os direitos reservados - <?php echo date("Y"); ?> </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    <?php require_once("footer.php"); ?>
 
     </body>
 </html>
