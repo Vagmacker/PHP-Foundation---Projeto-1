@@ -11,7 +11,7 @@
 
     <?php require_once("navegacao.php"); ?>
 
-    <form class="form-horizontal">
+    <form method="get" action="action.php" class="form-horizontal">
         <fieldset>
 
             <!-- Form Name -->
@@ -23,7 +23,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textinput">Nome</label>
                 <div class="col-md-4">
-                    <input id="textinput" name="textinput" type="text"  class="form-control input-md">
+                    <input id="textinput" name="nome" type="text"  class="form-control input-md">
 
                 </div>
             </div>
@@ -32,7 +32,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textinput">E-mail</label>
                 <div class="col-md-4">
-                    <input id="textinput" name="textinput" type="text"  class="form-control input-md">
+                    <input id="textinput" name="email" type="text"  class="form-control input-md">
 
                 </div>
             </div>
@@ -41,7 +41,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textinput">Assunto</label>
                 <div class="col-md-4">
-                    <input id="textinput" name="textinput" type="text" class="form-control input-md">
+                    <input id="textinput" name="assunto" type="text" class="form-control input-md">
 
                 </div>
             </div>
@@ -50,7 +50,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textarea">Mensagem</label>
                 <div class="col-md-4">
-                    <textarea class="form-control" id="textarea" name="textarea"></textarea>
+                    <textarea class="form-control" id="textarea" name="mensagem"></textarea>
                 </div>
             </div>
 
