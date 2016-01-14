@@ -1,8 +1,3 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-    </head>
-    <body>
 
         <footer class="footer">
             <div style="background-color: black">

@@ -1,15 +1,3 @@
-<html lang="pt-br">
-    <head>
-        <title>Contato</title>
-
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
-
-    </head>
-
-    <body>
-
-    <?php require_once("navegacao.php"); ?>
 
     <form method="get" action="action.php" class="form-horizontal">
         <fieldset>
@@ -61,8 +49,3 @@
 
         </fieldset>
     </form>
-
-    <?php require_once("footer.php"); ?>
-
-    </body>
-</html>

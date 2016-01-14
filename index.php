@@ -1,23 +1,19 @@
-<html lang="pt-br">
-    <head>
-        <title>Home</title>
+ <?php require_once("navegacao.php");
 
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css"/>
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    if(isset($_GET['p'])){
+        $pagina = $_GET['p'];
+    }else{
+        $pagina = "home";
+    }
 
-    </head>
-    <body>
+    $_pages = array("home", "servicos", "produtos", "empresa", "contato");
 
-        <?php require_once("navegacao.php"); ?>
+    if(in_array($pagina, $_pages)){
+        require_once($pagina.'.php');
+    }else{
+        require_once("404.php");
+    }
 
-        <div>
-            <h1 class="text-center home" style="font-size: 65px;">
-                Home
-            </h1>
-        </div>
+    require_once("footer.php");
 
-        <?php require_once("footer.php"); ?>
-
-    </body>
-</html>
+ ?>
