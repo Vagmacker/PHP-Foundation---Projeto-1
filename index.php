@@ -1,14 +1,15 @@
  <?php require_once("navegacao.php");
 
- function verifica(){
-     $_pages = array("home", "servicos", "produtos", "empresa", "contato");
+    function verifica($pagina){
 
-     if(in_array($pagina, $_pages)){
-         require_once($pagina.'.php');
-     }else{
-         require_once("404.php");
-     }
- }
+        $_pages = array("home", "servicos", "produtos", "empresa", "contato");
+
+        if(in_array($pagina, $_pages)){
+            require_once($pagina.'.php');
+        }else{
+            http_response_code(404);
+        }
+    }
 
     if(isset($_GET['p'])){
         $pagina = $_GET['p'];
@@ -16,7 +17,7 @@
         $pagina = "home";
     }
 
-    verifica();
+    verifica($pagina);
 
     require_once("footer.php");
 
