@@ -7,7 +7,7 @@
         if(in_array($pagina, $_pages)){
             require_once($pagina.'.php');
         }else{
-            http_response_code(404);
+            require_once("404.php");
         }
     }
 
